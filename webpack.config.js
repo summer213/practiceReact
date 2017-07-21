@@ -71,9 +71,13 @@ module.exports = {
                 test: /\.(png|jpg|gif)$/,
                 loader: 'url-loader?limit=8192&name=./img/[hash].[ext]'
              },
-            { 
-              test: /\.scss$/, 
-              loader: 'style!css!sass?sourceMap'
+            // { 
+            //   test: /\.scss$/, 
+            //   loader: 'style!css!sass?sourceMap'
+            // }
+            {
+                test: /\.scss/,
+                loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
             }
         ]
     },
@@ -116,7 +120,7 @@ module.exports = {
     devServer: {
         contentBase: './',
         host: 'localhost',
-        port: 3200,
+        port: 3201,
         inline: true,
         hot: true,
     }

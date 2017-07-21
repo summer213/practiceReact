@@ -1,0 +1,37 @@
+$mainPink:#ff8aca;
+$mainGrey:#7b7979;
+$headerPink:#ffceef;
+html,body{
+	margin: 0 auto;
+	width: 750px;
+	position: relative;
+	padding-bottom: 100px;
+}
+.col-25{
+    width: 25%;
+}
+@font-face {font-family: "footer";
+  src: url('../images/footerbar/footer.eot'); /* IE9*/
+  src: url('../images/footerbar/footer.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../images/footerbar/footer.woff') format('woff'), /* chrome, firefox */
+  url('../images/footerbar/footer.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../images/footerbar/footer.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@each $col in 10, 20, 25, 30, 33, 35, 40, 50, 60, 65, 70, 75, 80, 90 {
+	.col-#{$col} {
+		width: $col * 1%;
+		float: left;
+	}
+}
+
+.clear:after {
+    display: block;
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    height: 0;
+}
+.clear {
+    zoom: 1;
+}

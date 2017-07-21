@@ -51,21 +51,22 @@
     "scss-loader": "^0.0.1"
   },
   "dependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "css-loader": "^0.23.0",
-    "jquery": "^2.1.4",
-    "underscore":"^1.8.3",
-    "react-addons-css-transition-group": "^0.14.0",
-    "moment": "^2.10.6",
     "history": "^1.12.5",
-    "react-router":"^1.0.0",
+    "jquery": "^2.1.4",
+    "moment": "^2.10.6",
     "react": "^0.14.0",
+    "react-addons-css-transition-group": "^0.14.0",
     "react-date-picker": "^3.1.8",
     "react-dom": "^0.14.0",
+    "react-router": "^1.0.0",
     "react-swipe": "^3.0.0",
     "react-tappable": "^0.7.1",
     "react-time-picker": "^1.1.0",
     "sass-loader": "^3.1.2",
     "signals": "^1.0.0",
-    "swipe-js-iso": "^2.0.1"
+    "swipe-js-iso": "^2.0.1",
+    "underscore": "^1.8.3"
   }
 }

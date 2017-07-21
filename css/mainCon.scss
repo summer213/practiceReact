@@ -1,0 +1,51 @@
+@import 'common.scss';
+
+.banner-img{
+    width: 750px;
+    height: 500px;
+}
+.con-tab-list{
+    p{
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 23px;
+        margin: 0;
+    }
+}
+.food{
+    position: relative;
+    background: url("../images/home/food.png") no-repeat center;
+    height: 137px;
+    background-position-y: 16px;
+}
+.notebook{
+    position: relative;
+    background: url("../images/home/notebook.png") no-repeat center;
+    height: 137px;
+    background-position-y: 16px;
+}
+.pets{
+    position: relative;
+    background: url("../images/home/pets.png") no-repeat center;
+    height: 137px;
+    background-position-y: 16px;
+}
+.game{
+    position: relative;
+    background: url("../images/home/game.png") no-repeat center;
+    height: 137px;
+    background-position-y: 16px;
+}
+
+.main-news{
+    .news-title{
+        border-left: $mainPink solid 3px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+}
