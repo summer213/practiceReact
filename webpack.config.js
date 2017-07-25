@@ -70,7 +70,10 @@ module.exports = {
                 //如下配置，将小于8192byte的图片转成base64码
                 test: /\.(png|jpg|gif)$/,
                 loader: 'url-loader?limit=8192&name=./img/[hash].[ext]'
-             },
+             },{
+                test: /\.json$/,
+                loader: 'json-loader'
+            },
             // { 
             //   test: /\.scss$/, 
             //   loader: 'style!css!sass?sourceMap'

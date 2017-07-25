@@ -12,6 +12,7 @@ const App = React.createClass({
             <div className = "main-wrap">{/*主屏幕*/}
                 <Header />
                 <MainWrap />
+                {this.props.children}
                 <div className = "main-content">{/*内容*/}
                     <div className = "main-footer">{/*页脚*/}
                         <Footer />

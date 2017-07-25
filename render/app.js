@@ -7,6 +7,7 @@ import App from '../component/app.js'
 
 render((
     <Router>
-        <Route path="/" component={App}/>
+        <Route path="/" component={App}>
+        </Route>
     </Router>
 ),document.getElementById('content'));

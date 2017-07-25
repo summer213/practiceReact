@@ -2,6 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import ReactSwipe from 'react-swipe'
 import { Router, Route, IndexRoute, Link, IndexLink } from 'react-router'
+import News from '../index/new.js'
+
 require('../../css/mainCon.scss')
 
 const ConTab = React.createClass({
@@ -22,20 +24,6 @@ const ConTab = React.createClass({
                         <div className = "col-25 game">
                             <p>休闲</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-})
-
-const News = React.createClass({
-    render(){
-        return(
-            <div>
-                <div className="main-news">
-                    <div className="news-title">
-                        热文圈
                     </div>
                 </div>
             </div>
