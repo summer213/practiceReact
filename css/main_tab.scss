@@ -1,0 +1,72 @@
+@import 'common.scss';
+
+.food2,.notebook2,.pets2,.game2{
+    width: 100%;
+    text-align: center;
+    line-height: 243px;
+    font-size: 28px;
+    height: 150px;
+}
+.food2{
+    background: url("../images/home/food.png") no-repeat center;
+    background-position-y: 23px;
+    background-size: 37%;
+}
+.notebook2{
+    background: url("../images/home/notebook.png") no-repeat center;
+    background-position-y: 23px;
+    background-size: 37%;
+}
+.pets2{
+    background: url("../images/home/pets.png") no-repeat center;
+    background-position-y: 23px;
+    background-size: 37%;
+}
+.game2{
+    background: url("../images/home/game.png") no-repeat center;
+    background-position-y: 23px;
+    background-size: 37%;
+}
+.ant-tabs-nav{
+    width: 100% !important;
+    background: #fff !important;
+    .ant-tabs-tab{
+        width: 25% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 150px !important;
+    }
+    .ant-tabs-tab-active{
+        color: $mainPink !important;
+    }
+}
+.ant-tabs-ink-bar{
+    background: none !important;
+}
+.main-wrap{
+    background: #fff;
+    padding-bottom: 130px;
+}
+// 美食
+// 美食介绍引言
+.Intro{
+    background: #f1f1f1;
+    width: 84%;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 6px;
+    font-size: 25px;
+    margin: 10px 0 30px;
+    padding: 20px;
+}
+.ant-steps{
+    width: 80%;
+    margin: 0 auto;
+    .ant-steps-description{
+        font-size: 27px;
+    }
+}
+.ant-steps-title{
+    font-size: 27px !important;
+}

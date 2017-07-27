@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 require('../../css/new.scss')
 var NewsData = require('../../data/NewData.json')
-console.log(NewsData);
+// console.log(NewsData);
 const NewLists = React.createClass({
     render() {
         return (
@@ -10,7 +10,7 @@ const NewLists = React.createClass({
                 <div className="news-item">
                     <div className="news-img col-35" style={this.props.styles}>
                     </div>
-                    <div className="news-con col-65">
+                    <div className="news-con col-60">
                         <h1>{this.props.title}</h1>
                         <p>{this.props.desc}</p>
                     </div>
@@ -28,7 +28,7 @@ const News = React.createClass({
                 'background':'url(../../images/'+ value.fileName +') no-repeat center',
                 'backgroundSize':'cover'
             }
-            console.log(value);
+            // console.log(value);
             newList.push(<NewLists key={index} styles={styleback} title={value.title} desc={value.desc}/>)
         });
         return (

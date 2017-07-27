@@ -1,45 +1,40 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink } from 'react-router'
+
+// import Star from '../component/star/star.js'
 // require('../../css/common.scss')
 require('../../css/footer.scss')
+const ACTIVE = { color: '#ff8aca' }
 const styles = {};
-
 styles.link = {
-  color: '#ccc',
+  color: '#7b7979',
 }
-
+// console.log(styles)
 styles.activeLink = {
   ...styles.link,  // ...的意思是相当于拿到了styles.link里面的全部属性
   color:"#ff8aca"
 }
 const FooterList = React.createClass({
-    handleClick:function(e){
+  handleClick:function(e){
+    // console.log(this.className);
     e.stopPropagation();
     e.preventDefault();
   },
     render(){
         return(
             <div className = "footer-list">
-                <IndexLink  to="/"  styles={styles.link}  activeStyle={styles.activeLink}>
-                    <div className = "col-25 home iconfont active" >
-                            <p>主页</p>
-                    </div>
+                <IndexLink  to="/"  className = "col-25 home iconfont" styles={styles.link}  activeStyle={styles.activeLink}>
+                    <p>主页</p>
                 </IndexLink>
-                <Link  to="/star"  styles={styles.link}  activeStyle={styles.activeLink}>
-                    <div className = "col-25 star iconfont">
-                        <p>动态</p>
-                    </div>
+                <Link  to="/star"  className = "col-25 star iconfont" styles={styles.link}  activeStyle={styles.activeLink}>
+                    <p>动态</p>
                 </Link>
-                <Link  to="/find" styles={styles.link}  activeStyle={styles.activeLink}>
-                    <div className = "col-25 find iconfont">
-                        <p>发现</p>
-                    </div>
+                <Link  to="/find" className = "col-25 find iconfont" styles={styles.link}  activeStyle={styles.activeLink}>
+                    <p>发现</p>
                 </Link>
-                <Link  to="/me" styles={styles.link}  activeStyle={styles.activeLink}>
-                    <div className = "col-25 me iconfont">
-                        <p>我的</p>
-                    </div>
+                <Link  to="/me" className = "col-25 me iconfont" styles={styles.link}  activeStyle={styles.activeLink}>
+                    <p>我的</p>
                 </Link>
             </div>
         )

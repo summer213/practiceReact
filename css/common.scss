@@ -22,7 +22,13 @@ html,body{
 		float: left;
 	}
 }
-
+a {
+    border: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
 .clear:after {
     display: block;
     clear: both;

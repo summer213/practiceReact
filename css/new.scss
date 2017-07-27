@@ -20,11 +20,16 @@
         border-radius: 10px;
         .news-img{
             height: 160px;
+            margin-right: 25px;
             // background: url('../images/40.jpg') no-repeat;
             // background-size: cover;
         }
         .news-con{
             height: 160px;
+            h1{
+                margin: 0;
+                text-align: center;
+            }
         }
     }
 }

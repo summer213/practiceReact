@@ -12,9 +12,9 @@ const ConTab = React.createClass({
             <div>
                 <div className="con-tab clear">
                     <div className = "con-tab-list">
-                        <div className = "col-25 food">
+                        <Link to="/food" className = "col-25 food">
                             <p>美食</p>
-                        </div>
+                        </Link>
                         <div className = "col-25 notebook">
                             <p>手账</p>
                         </div>
