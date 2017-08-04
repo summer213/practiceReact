@@ -1,13 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Tabs, Icon } from 'antd';
-import { Table } from 'antd';
-import { Steps } from 'antd';
-const Step = Steps.Step;
-require('../../dist/antd.scss');        // 加载 CSS'
 require('../../css/main_tab.scss');        // 加载 CSS'
-// ReactDOM.render(<DatePicker />, mountNode);
-const TabPane = Tabs.TabPane;
 
 const FoodTab = React.createClass({
     render() {
@@ -100,35 +93,4 @@ const NoteBook = React.createClass({
     }
 })
 
-const Food = React.createClass({
-    getInitialState: function () {
-        window.scrollTo(0, 0);
-        return {
-
-        }
-    },
-    render() {
-        // console.log(this.props.params);
-        return (
-            <div className="news-list">
-                <Tabs defaultActiveKey={this.props.params.splat} tabBarStyle={{ 'borderBottom': 'none' }}>
-                    <TabPane tab={<div className="food2">美食</div>} key="1">
-                        <FoodTab />
-                    </TabPane>
-                    <TabPane tab={<div className="notebook2">手账</div>} key="2">
-                        <NoteBook />
-                    </TabPane>
-                    <TabPane tab={<div className="pets2">宠物圈</div>} key="3">
-                        Content of Tab Pane 3
-                    </TabPane>
-                    <TabPane tab={<div className="game2">休闲</div>} key="4">
-                        Content of Tab Pane 4
-                    </TabPane>
-                </Tabs>
-            </div>
-        )
-    }
-})
-
-
-export default Food;
+export default { FoodTab,NoteBook };

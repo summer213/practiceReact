@@ -12,18 +12,18 @@ const ConTab = React.createClass({
             <div>
                 <div className="con-tab clear">
                     <div className = "con-tab-list">
-                        <Link to="/food" className = "col-25 food">
+                        <Link to="/food/:1" className = "col-25 food">
                             <p>美食</p>
                         </Link>
-                        <div className = "col-25 notebook">
+                        <Link to="/food/:2" className = "col-25 notebook">
                             <p>手账</p>
-                        </div>
-                        <div className = "col-25 pets">
+                        </Link>
+                        <Link to="/food/:3" className = "col-25 pets">
                             <p>宠物圈</p>
-                        </div>
-                        <div className = "col-25 game">
+                        </Link>
+                        <Link to="/food/:4" className = "col-25 game">
                             <p>休闲</p>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -32,6 +32,12 @@ const ConTab = React.createClass({
 })
 
 const MainWrap = React.createClass({
+    getInitialState:function(){
+        window.scrollTo(0,0);
+        return{
+
+        }
+    },
     render(){
         return(
             <div>

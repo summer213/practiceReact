@@ -15,7 +15,7 @@ render((
     <Router>
         <Route path="/" component={App}>
             <IndexRoute component={Index}/>
-            <Route path="/food" component={Food}/>
+            <Route path="/food/:*" component={Food}/>
             <Route path="/star" component={Star}>
                 {/*<Route path="tip/:tipName" component={CircleTip} />
                 <Route path="say" component={CircleSay} />*/}
